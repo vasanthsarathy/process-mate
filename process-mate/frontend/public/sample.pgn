@@ -1,0 +1,21 @@
+[Event "Chess.com"]
+[Site "Chess.com"]
+[Date "2023.07.15"]
+[Round "1"]
+[White "Carlsen, Magnus"]
+[Black "Nakamura, Hikaru"]
+[Result "1-0"]
+[ECO "B23"]
+[WhiteElo "2835"]
+[BlackElo "2768"]
+[TimeControl "180+1"]
+[Termination "Magnus Carlsen won by resignation"]
+
+1. e4 c5 2. Nc3 d6 3. f4 g6 4. Nf3 Bg7 5. Bc4 Nc6 6. O-O e6 7. d3 Nge7 8. Qe1 O-O 
+9. Bb3 b6 10. Qh4 Ba6 11. Bd2 Rc8 12. Rae1 Qd7 13. f5 exf5 14. exf5 Bxc3 15. Bxc3 Bxd3 
+16. fxg6 hxg6 17. cxd3 d5 18. Ng5 f5 19. Qg3 Rce8 20. h4 Re6 21. Bd2 Kg7 22. Bc2 Rh8 
+23. Bd1 Nd4 24. Bf3 Nef6 25. Bxd5 Nxd5 26. Qf3 N4f6 27. Rxe6 Qxe6 28. Qd3 Qe4 
+29. Qxe4 fxe4 30. Ne6+ Kf7 31. Nf4 Rd8 32. Bc3 Kg7 33. g3 Rd5 34. Kg2 a5 35. Re1 Re5 
+36. Bb2 Rb5 37. Bc3 Re5 38. h5 gxh5 39. Nxh5+ Kg6 40. Nxf6 Kxf6 41. Bxa5 Rxe1 
+42. Bxe1 Ke5 43. Kf2 c4 44. Bb4 Kd4 45. Ke2 Nd5 46. Bd2 Kc5 47. a4 Kb4 48. a5 bxa5 
+49. g4 Kc5 50. g5 Kd4 51. g6 a4 52. g7 a3 53. bxa3 c3 54. Bf4 Kc4 55. g8=Q 1-0
