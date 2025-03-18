@@ -65,17 +65,17 @@ function PGNLoader({ onGameLoad }) {
     <div className="pgn-loader">
       <h2 className="section-title">Load PGN</h2>
       
-      <div className="mb-3">
+      <div className="mb-2">
         <textarea
           className="pgn-textarea"
           placeholder="Paste PGN text here..."
           value={pgnText}
           onChange={handlePgnChange}
-          rows={5}
+          rows={3}
         />
       </div>
       
-      <div className="mb-3">
+      <div className="pgn-controls">
         <label className="file-upload-label">
           <input 
             type="file" 
@@ -83,16 +83,16 @@ function PGNLoader({ onGameLoad }) {
             onChange={handleFileUpload}
             className="file-input"
           />
-          <span className="file-button">Upload PGN file</span>
+          <span className="file-button">Upload PGN</span>
         </label>
-      </div>
       
-      <button 
-        className="load-button" 
-        onClick={loadGame}
-      >
-        Load Game
-      </button>
+        <button 
+          className="load-button" 
+          onClick={loadGame}
+        >
+          Load
+        </button>
+      </div>
       
       {error && <div className="error-message">{error}</div>}
     </div>

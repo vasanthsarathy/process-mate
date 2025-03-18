@@ -20,14 +20,15 @@ code {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 1.5rem;
+  gap: 1.5rem;
 }
 
 .board-container {
@@ -64,6 +65,7 @@ code {
 .move-row {
   display: flex;
   margin-bottom: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .move-number {
@@ -72,10 +74,11 @@ code {
 }
 
 .move {
-  flex: 0 0 70px;
+  display: inline-block;
   cursor: pointer;
   padding: 2px 5px;
   border-radius: 3px;
+  margin-right: 5px;
 }
 
 .move:hover {
@@ -85,6 +88,57 @@ code {
 .move.active {
   background-color: #4a86e8;
   color: white;
+}
+
+.move-with-variations {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.variation {
+  margin-left: 10px;
+  border-left: 2px solid #ddd;
+  padding-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: rgba(200, 200, 200, 0.1);
+  border-radius: 4px;
+}
+
+.variation-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.variation-marker {
+  color: #888;
+  font-size: 0.9em;
+  margin-right: 4px;
+}
+
+.variation-moves {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.delete-variation-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 2px 5px;
+  margin-left: auto;
+  transition: all 0.2s;
+}
+
+.delete-variation-btn:hover {
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 3px;
 }
 
 .section-title {
@@ -235,6 +289,7 @@ button:disabled {
 .pgn-loader {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .pgn-textarea {
@@ -253,6 +308,17 @@ button:disabled {
   margin-bottom: 1rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.pgn-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .file-upload-label {
   display: inline-block;
   cursor: pointer;
@@ -266,10 +332,11 @@ button:disabled {
   display: inline-block;
   background-color: #f0f0f0;
   color: #333333;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 4px;
   border: 1px solid #e0e0e0;
   font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
   transition: all 0.2s;
 }
 
@@ -279,7 +346,8 @@ button:disabled {
 }
 
 .load-button {
-  align-self: flex-start;
+  padding: 6px 12px;
+  font-size: 0.9em;
 }
 
 .error-message {
